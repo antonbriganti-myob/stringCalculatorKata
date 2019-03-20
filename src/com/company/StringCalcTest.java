@@ -62,9 +62,10 @@ class StringCalcTest {
     }
 
     @org.junit.jupiter.api.Test
-    void addCalledWithThreeNumbersReturnsSumOfAllNumbers() {
+    void addCalledWithThreeNumbersReturnsSumOfAllNumbers() throws Exception {
         int result;
 
+        result = calc.add("1,2,3");
         try {
             result = calc.add("1,2,3");
         }
